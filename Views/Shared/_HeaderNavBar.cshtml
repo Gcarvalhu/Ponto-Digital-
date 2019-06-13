@@ -13,10 +13,9 @@
                 <li><a href="#titulo_planos" title="Nossos pacotes">Planos</a></li>
                 <li><a href="#desenvolvedor" title="Quem somos">Quem somos</a></li>
                 <li><a href='@Url.Action("Index","Cadastro")' title="Serviço de atendimento ao cliente">SAC</a></li>
-                <li><a href='@Url.Action("Index","Cadastro")' title="Cadastre-se">Cadastre-se</a></li>
                  @if (string.IsNullOrEmpty(user))
             {
-            <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
+            <li><a id="bt_login" asp-controller="Cliente" asp-action="Login" href='@Url.Action("Index","Cadastro")'>Login/Cadastro</a></li>
             }else{
             <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
             }

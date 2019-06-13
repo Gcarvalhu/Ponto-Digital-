@@ -1,9 +1,9 @@
-namespace Pontodigitaloficial.Models
+namespace Ponto_Digital_.Models
 {
     public class GeneroModel
     {
-        public int Id {get;set;}
+        public int id {get; set;}
 
-        public string Genero {get;set;}
+        public string Nome {get; set;}
     }
 }
